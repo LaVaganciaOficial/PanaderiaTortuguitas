@@ -1,0 +1,26 @@
+*Nombre; La Panadería de Tortuguitas
+*Comercio; Bar/Café/Librería
+
+**Objetivos; 
+-Busca un sistema de reservas. 
+-Controlar los acompañantes de los cafés (como tortas y facturas)
+-Administrar los eventos del lugar (Conciertos pequeños/Feria Americana) así como también dar aviso a sus clientes de los eventos y que puedan reservarlos.
+-Implementación de un "Grow" (tienda de artículos relacionados a la marihuana).
+-Buscan también un sitio con el cuál poder administrar quién puede reservar entradas a eventos y quien no de manera física y virtual.
+-Conseguir una máquina especial para café que les permita tener cafés especializados y personalizados.
+-Administración de mesas.
+-Pago físico.
+-Listas de invitados para los eventos.
+-Pago anticipado en la caja a la hora de los pedidos.
+-Sistema de administración para la dueña.
+-Administración de empleados.
+-El sistema solo estará disponible para los dueños.
+-Administración de recursos.
+
+Distribución del Proyecto;
+*Tobías; Sistema de reservas.
+*Leandro; Landing Page.
+*Elias; LogIn.
+La base de datos se hace a lo último y entre todos, además tenemos que tener el resto terminado para saber que datos buscamos en la BD.
+
+
