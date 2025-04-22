@@ -13,7 +13,6 @@
         .menu-item.hidden {
             display: none;
         }
-        
         /* Estilo para el botón */
         .ver-mas {
             display: inline-block;
@@ -26,17 +25,14 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
-        
         .ver-mas:hover {
             background-color: #6b3309;
         }
-        
         /* Estilo para cuando el menú está expandido */
         .menu-expanded .menu-item.hidden {
             display: block;
             animation: fadeIn 0.5s ease;
-        }
-        
+        } 
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
@@ -52,7 +48,7 @@
                 <h1>Panaderia</h1>
             </div>
             <ul class="menu">
-                <li><a target="_blank" href="php/login.php">Iniciar Sesion</a></li>
+                <li><a target="_blank" href="../php/login.php">Iniciar Sesion</a></li>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#menu">Nuestro Menú</a></li>
                 <li><a href="#eventos">Eventos</a></li>
@@ -65,7 +61,6 @@
             </div>
         </nav>
     </header>
-
     <section id="inicio" class="hero">
         <div class="hero-content">
         <br>
@@ -77,11 +72,9 @@
             <img src="https://images.adsttc.com/media/images/575f/85e8/e58e/ceef/5c00/0076/large_jpg/TIERRA_GARAT23.jpg?1465877981" alt="Ambiente de la Cafetería">
         </div>
     </section>
-
     <section id="menu" class="menu-section">
         <h2>Nuestro Delicioso Menú</h2>
         <div class="menu-grid">
-
             <div class="menu-item">
                 <img src="https://th.bing.com/th/id/OIP.EIi4fPQUqaQNCq-80lpdZAHaE_?rs=1&pid=ImgDetMain" alt="Café Latte">
                 <h3>Latte Cremoso</h3>
@@ -94,7 +87,6 @@
                 <p>Espresso, leche vaporizada y una corona de espuma perfecta.</p>
                 <span class="precio">$4.80</span>
             </div>
-            
             <div class="menu-item hidden">
                 <img src="https://th.bing.com/th/id/OIP.NZGzV2GOHNqBXmBPXiH6YwHaE8?w=251&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Espresso Doble">
                 <h3>Espresso Doble</h3>
@@ -122,7 +114,6 @@
         </div>
         <a href="#" class="ver-mas" id="ver-menu-completo">Ver Menú Completo</a>
     </section>
-
     <!-- El resto del código sigue igual... -->
     <section id="eventos" class="eventos-section">
       <center><h2>Eventos de la Semana</h2></center>
@@ -184,7 +175,6 @@
           </div>
       </div>
   </section>
-
     <section id="galeria" class="galeria-section">
         <h2>Momentos en Nuestro Rincón</h2>
         <div class="galeria-grid">
@@ -194,7 +184,6 @@
         </div>
         <a href="https://www.google.com/maps/place/Nobel+caf%C3%A9+tortuguitas/@-34.4685509,-58.7567438,3a,75y,90t/data=!3m8!1e2!3m6!1sCIHM0ogKEICAgICemdDYugE!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fgps-cs-s%2FAB5caB-88HldfCtXktLPMmRbLkJn-Xq0XUdBlHpfJsvlRNTA3HWn4MFhcBeY5ahbce4MeqOpnE8nFutuB2zNhnY54F7WrwD8NaEwf78lya360x-XoRFqDvFh_DSYe9df_GYSu83GZCXChA%3Dw224-h298-k-no!7i3072!8i4096!4m13!1m2!2m1!1scafeteria!3m9!1s0x95bc99dacce83c37:0xc8fdabf9f4ec8ce1!8m2!3d-34.4685509!4d-58.7567438!10e5!14m1!1BCgIgAQ!15sCgljYWZldGVyaWFaCyIJY2FmZXRlcmlhkgELY29mZmVlX3Nob3DgAQA!16s%2Fg%2F11s3cl26cp?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D" class="ver-mas">Ver Galería Completa</a>
     </section>
-
     <section id="contacto" class="contacto-section">
         <h2>¡Visítanos o Contáctanos!</h2>
         <div class="contacto-info">
@@ -219,32 +208,25 @@
             <button type="submit" class="cta-button">Enviar Mensaje</button>
         </form>
     </section>
-
     <footer>
         <p>&copy; 2025 <b>Panaderia</b> Tu Rincón Cafetero. Todos los derechos reservados.</p>
     </footer>
-
     <script src="index.js"></script>
-    <script src="index.js"></script>
-    
+    <script src="index.js"></script>  
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const verMenuBtn = document.getElementById('ver-menu-completo');
             const menuGrid = document.querySelector('.menu-grid');
-            
             verMenuBtn.addEventListener('click', function(e) {
                 e.preventDefault();
-                
                 // Alternar la clase para mostrar los elementos ocultos
                 menuGrid.classList.toggle('menu-expanded');
-                
                 // Cambiar el texto del botón según el estado
                 if (menuGrid.classList.contains('menu-expanded')) {
                     verMenuBtn.textContent = 'Mostrar Menos';
                 } else {
                     verMenuBtn.textContent = 'Ver Menú Completo';
                 }
-                
                 // Desplazarse suavemente hacia los nuevos elementos
                 if (menuGrid.classList.contains('menu-expanded')) {
                     const hiddenItems = document.querySelectorAll('.menu-item.hidden');
