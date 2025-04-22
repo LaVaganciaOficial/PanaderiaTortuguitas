@@ -1,0 +1,76 @@
+/* Paleta de colores */
+:root {
+    --negro: #1c1c1c;
+    --gris: #d3d3d3;
+    --blanco: #ffffff;
+    --marron: #8b4513;
+    --marron-claro: #d2b48c;
+}
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+body {
+    background-color: var(--marron-claro);
+    color: var(--negro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* Contenedor del formulario */
+.form-container {
+    background-color: var(--blanco);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(28, 28, 28, 0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border: 2px solid var(--marron);
+}
+h2 {
+    margin-bottom: 20px;
+    color: var(--marron);
+}
+/* Inputs */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid var(--gris);
+    border-radius: 8px;
+    background-color: var(--gris);
+}
+/* Botones */
+button {
+    width: 100%;
+    background-color: var(--marron);
+    color: var(--blanco);
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: var(--negro);
+}
+/* Enlaces */
+a {
+    color: var(--marron);
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+/* Mensajes y textos pequeños */
+p {
+    margin-top: 15px;
+    font-size: 14px;
+}
